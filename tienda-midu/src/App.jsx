@@ -6,6 +6,7 @@ import { Footer } from './components/Footer'
 import { IS_DEVELOPMENT } from "./config";
 import { Filters } from "./components/Filters.jsx";
 import { useFilters } from "./hooks/useFilters";
+import { Cart } from "./components/Cart";
 
 
 
@@ -16,7 +17,8 @@ function App() {
   
   return (
     <>
-      <Header/>
+      <Header />
+      <Cart/>
       <Products products={filteredProducts} />
       { IS_DEVELOPMENT && <Footer/>}
     </>
